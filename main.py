@@ -62,7 +62,7 @@ class import_file:
 
 class contactForm(FlaskForm):
     username = StringField('Nom: ',
-                           validators=[DataRequired(), Length(min=3, max=18)])
+                           validators=[DataRequired(), Length(min=3, max=30)])
     phone_number = StringField('Numéro de Téléphone: ',
                                validators=[DataRequired(), Length(min=8, max=20)])
     submit = SubmitField('Ajouter')
