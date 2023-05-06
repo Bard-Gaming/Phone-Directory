@@ -8,6 +8,7 @@
 
 	<link rel="stylesheet" type="text/css" href="/staticFiles/header.css">
 	<link rel="stylesheet" type="text/css" href="/staticFiles/directory_page.css">
+	<script src="/staticFiles/javascript/directory_page.js"></script>
 	<link rel="icon" href="/staticFiles/resources/telephone.png">
 </head>
 <body>
@@ -16,7 +17,9 @@
 	<a id='homepageLink' href='/'><i class="fa-solid fa-left-long"></i></a>
 	{% include 'header.html' %}
 
-	<h1 id="directoryHeader" class="excludedHeader">Liste:</h1>
+	<h1 id="directoryHeader" class="excludedHeader">Recherche</h1>
+	<input id='lookupInput' onclick='this.select()' onkeyup='contact_lookup(this.value)'>
+	<i id="lookupInputIcon" class="fa-solid fa-magnifying-glass"></i>
 	<ul>
 	{% for data in data_list %}
 		<li>

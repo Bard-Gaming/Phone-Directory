@@ -71,3 +71,5 @@ body {
     cursor: pointer;
     transition: color 300ms ease;
 }
+
+#homepageLink:hover {color: #a988c5}
