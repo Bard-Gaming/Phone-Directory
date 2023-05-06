@@ -1,0 +1,15 @@
+#homepageLink {
+    color: #dcb2ff;
+    font-size: 40px;
+
+    position: absolute;
+    left: 5%;
+    top: 3%;
+
+    cursor: pointer;
+    transition: color 300ms ease;
+}
+
+#homepageLink:hover {
+    color: #a988c5;
+}
