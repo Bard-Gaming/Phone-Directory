@@ -18,7 +18,9 @@
 
 	<ul>
 	{% for data in data_list %}
-		<li>Nom: {{ data[0] }}; Numéro: {{ data[1] }}</li>
+		<li>
+			<span class='nameElement'>Nom: {{ data[0] }}</span>&nbsp;<span class='numberElement'> Numéro: {{ data[1] }}</span>
+		</li>
 	{% endfor %}
 	</ul>
 </div>
