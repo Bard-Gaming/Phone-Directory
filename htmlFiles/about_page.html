@@ -4,10 +4,10 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="https://kit.fontawesome.com/bccc467ec4.js" crossorigin="anonymous"></script>
-	<title>Répertoire Entier</title>
+	<title>À propos</title>
 
 	<link rel="stylesheet" type="text/css" href="/staticFiles/header.css">
-	<link rel="stylesheet" type="text/css" href="/staticFiles/directory_page.css">
+	<link rel="stylesheet" type="text/css" href="/staticFiles/about_page.css">
 	<link rel="icon" href="/staticFiles/resources/telephone.png">
 </head>
 <body>
@@ -16,14 +16,6 @@
 	<a id='homepageLink' href='/'><i class="fa-solid fa-left-long"></i></a>
 	{% include 'header.html' %}
 
-	<h1 id="directoryHeader" class="excludedHeader">Liste:</h1>
-	<ul>
-	{% for data in data_list %}
-		<li>
-			<span class='nameElement'>Nom: {{ data[0] }}</span>&nbsp;<span class='numberElement'> Numéro: {{ data[1] }}</span>
-		</li>
-	{% endfor %}
-	</ul>
 </div>
 
 </body>

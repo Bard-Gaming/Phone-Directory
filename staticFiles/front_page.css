@@ -6,14 +6,13 @@
     color: #dcb2ff;
 
     margin-top: 2vh;
-    padding: 50px;
+    padding: 25px 50px 50px 50px;;
     border-radius: 15px;
 }
 
 #newContactContainer > h1 {
 	margin: 0 0 50px 0;
 	text-align: center;
-    text-decoration: underline;
 }
 
 #contactForm {

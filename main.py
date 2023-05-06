@@ -84,3 +84,7 @@ def home_page():
 def directory_page():
     data_list = [eval(data_element) for data_element in read_data()]
     return import_file('directory_page.html', data_list = data_list).link
+
+@app.route('/about/')
+def about_page():
+    return import_file('about_page.html').link
