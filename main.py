@@ -37,6 +37,7 @@ class save_data:
         return True if data in read_data(self.file_name) else False
 
 # Outil pour importer les fichiers plus facilement:
+"""
 class import_file:
     image_extensions = ['jpg', 'png']
     static_path = os.path.join('static')
@@ -57,6 +58,7 @@ class import_file:
 
         if self.extension in self.image_extensions:
             return os.path.join(self.static_path, self.file_name)
+"""
 
 # -------------Forms (User input)-------------- :
 
@@ -78,13 +80,16 @@ def home_page():
         save_data((username, phone_number)).append()
 
     contact_form = contactForm()
-    return import_file('front_page.html', form=contact_form).link
+    return render_template('front_page.html', form=contact_form)
 
 @app.route('/directory/')
 def directory_page():
     data_list = [eval(data_element) for data_element in read_data()]
-    return import_file('directory_page.html', data_list = data_list).link
+    return render_template('directory_page.html', data_list = data_list)
 
 @app.route('/about/')
 def about_page():
-    return import_file('about_page.html').link
+    return render_template('about_page.html')
+
+if __name__ == '__main__':
+    app.run()

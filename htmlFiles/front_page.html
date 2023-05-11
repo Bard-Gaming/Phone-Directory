@@ -33,8 +33,9 @@
 				{{ form.phone_number }}
 			</div>
 
-			{{ form.submit(id='submitButton') }}
+			{{ form.submit(id='submitButton', onclick='appendToDB();') }}
 		</form>
+		<div id="successPanel" style='display: none'>Contact rajouté avec succès.</div>
 	</div>
 </div>
 

@@ -36,5 +36,16 @@
     transition: background-color 300ms ease
 }
 
+#successPanel {
+    width: auto;
+    text-align: center;
+    margin-top: 25px;
+    color: white;
+    background-color: #ff7100;
+    padding: 20px 0;
+    font-size: 1.2em;
+    border-radius: 15px;
+}
+
 #submitButton:hover {background-color: #7657c1}
 #submitButton:active {background-color: #563a9b}
