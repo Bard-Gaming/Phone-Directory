@@ -8,6 +8,7 @@
 
 	<link rel="stylesheet" type="text/css" href="/staticFiles/header.css">
 	<link rel="stylesheet" type="text/css" href="/staticFiles/front_page.css">
+	<script type="text/javascript" src="/staticFiles/javascript/front_page.js"></script>
 	<link rel="icon" href="/staticFiles/resources/telephone.png">
 </head>
 <body>
@@ -17,7 +18,7 @@
 
 	<div id="newContactContainer">
 		<h1>Ajouter Contact</h1>
-		<form id="contactForm" method="POST" action="">
+		<form id="contactForm" method="POST" action="" onsubmit="return false">
 			<!-- élément caché pour sécurité (requis) -->
 			{{ form.hidden_tag() }}
 
